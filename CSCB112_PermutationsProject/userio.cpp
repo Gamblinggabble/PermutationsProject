@@ -34,7 +34,7 @@ int menu(int** nums, const int rows, int& cols, int option) {
 	switch (option)
 	{
 	case 1: printMenu(); break;
-	case 2: loadTask2(nums, rows, cols); break;
+	case 2: loadTask2(nums, cols, rows); break;
 	case 3: loadTask3(nums, cols); break;
 	case 4: loadTask4(nums, cols); break;
 	case 5: loadTask5(nums, cols); break;

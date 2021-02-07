@@ -21,7 +21,7 @@ int task1(int** arr, int& cols, int rows) {
 
 	return 0;
 }
-int task2(int** arr, int rows, int& cols) {
+int task2(int** arr, int cols, int rows) {
 	//task2 - initializes array
 
 	cout << "Въведете стойностите за x:" << endl;
@@ -639,9 +639,9 @@ int task17B(int** arr, int cols) {
 }
 
 
-int loadTask2(int** arr, int rows, int& cols) {
-	task1(arr, rows, cols);
-	task2(arr, rows, cols);
+int loadTask2(int** arr, int& cols, int rows) {
+	task1(arr, cols, rows);
+	task2(arr, cols, rows);
 
 	while (!isValidFunction(arr, cols))
 	{

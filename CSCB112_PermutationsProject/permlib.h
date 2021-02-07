@@ -4,7 +4,7 @@
 #define setWParam 4
 
 int task1(int**, int& , int=2);
-int task2(int**, int, int&);
+int task2(int**, int, int=2);
 bool task3(int**, int);
 bool task4(int**, int);
 bool task5(int**, int);
@@ -22,7 +22,7 @@ bool task16(int**, int);
 int task17A(int**, int);
 int task17B(int**, int);
 
-int loadTask2(int**, int, int&);
+int loadTask2(int**, int&, int);
 int loadTask3(int**, int);
 int loadTask4(int**, int);
 int loadTask5(int**, int);

@@ -14,14 +14,17 @@ int main() {
 
 	printMenu();
 
+	cout << "Избирам: ";
 	int option;
 	while (cin >> option) {
 		if (option == 19) break;
-		if (option > 2 && option < 15 && cols == 0 ) { // добавено след предаване "&& option < 15"
+		if (option > 2 && option < 15 && cols == 0 ) {
 			cout << "Не сте въвели елементи за х." << endl;
 			continue;
 		}
 		menu(nums, rows, cols, option);
+		
+		cout << "Избирам: ";
 	}
 
 	freeMemory(nums);
